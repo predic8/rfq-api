@@ -29,6 +29,7 @@ components:
   schemas:
     Quotation:
       type: object
+      additionalProperties: false
       properties:
         id:
           type: string
@@ -58,3 +59,7 @@ components:
           pattern: "[A-Z]{3}"
           maxLength: 3
           example: ABC
+        carrier:
+          type: string
+          maxLength: 10
+          pattern: "\\w*"
