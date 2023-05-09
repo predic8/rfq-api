@@ -1,9 +1,7 @@
 [![OpenAPI Checks](https://github.com/tubayer/rfq-api/actions/workflows/actions.yml/badge.svg)](https://github.com/tubayer/rfq-api/actions/workflows/actions.yml)
 
-# rfq-api
+# RFQ API - API Lifecycle Demo
 
-# About
+## 
 
-# Files
-
-https://tinyurl.com/apilifecycle2023
+spectral lint rfq-api-v1.oas.yml

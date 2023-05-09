@@ -47,7 +47,7 @@ components:
         price:
           type: number
           minimum: 0
-          example: "9.98"
+          example: 9.98
         shipment:
           type: string
           enum:
