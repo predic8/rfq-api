@@ -61,3 +61,5 @@ components:
           example: ABC
         carrier:
           type: string
+          maxLength: 16
+          pattern: "\\w+"
