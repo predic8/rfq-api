@@ -62,4 +62,4 @@ components:
         carrier:
           type: string
           maxLength: 16
-          pattern: "\\w+"
+          pattern: "\\w*"
