@@ -61,4 +61,4 @@ components:
           example: ABC
         lieferant:
           type: string
-          maxLength: 20
+          maxLength: 25
