@@ -62,3 +62,4 @@ components:
         lieferant:
           type: string
           maxLength: 25
+          pattern: "\\w+"
