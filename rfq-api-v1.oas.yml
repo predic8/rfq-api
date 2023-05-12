@@ -59,7 +59,7 @@ components:
           pattern: "[A-Z]{3}"
           maxLength: 3
           example: ABC
-        carrier:
+        lieferant:
           type: string
-          maxLength: 16
-          pattern: "\\w*"
+          maxLength: 25
+          pattern: "\\w+"
