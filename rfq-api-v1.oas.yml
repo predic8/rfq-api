@@ -59,3 +59,5 @@ components:
           pattern: "[A-Z]{3}"
           maxLength: 3
           example: ABC
+        lieferant:
+          type: string
