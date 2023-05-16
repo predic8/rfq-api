@@ -14,3 +14,10 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: spectral lint -r https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml rfq-api-v1.oas.yml
+  OWASP-Rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm install -g @stoplight/spectral-cli
+      - run: spectral lint -r https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-owasp.yml rfq-api-v1.oas.yml
