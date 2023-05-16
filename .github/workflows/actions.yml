@@ -6,6 +6,7 @@ on:
 env:
   RULES_VERSION: v4
 
+
 jobs:
   OAS-Rules:
     runs-on: ubuntu-latest
