@@ -6,7 +6,6 @@ on:
 env:
   RULES_VERSION: v4
 
-
 jobs:
   OAS-Rules:
     runs-on: ubuntu-latest
@@ -14,7 +13,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
-      - run: spectral lint -r https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml rfq-api-v1.oas.yml
+      - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
+      - run: spectral lint rfq-api-v1.oas.yml
   Security-Rules:
     runs-on: ubuntu-latest
     steps:
@@ -24,3 +24,12 @@ jobs:
       - run: npm install --save -D @stoplight/spectral-owasp-ruleset
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-security.yml -O .spectral.yml
       - run: spectral lint rfq-api-v1.oas.yml
+  Versioning:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v4
+        with:
+          go-version: '^1.20.3'
+      - run: go install github.com/tufin/oasdiff@latest
+      - run: oasdiff -fail-on-diff -base rfq-api-v1-ref.oas.yml -revision rfq-api-v1.oas.yml
