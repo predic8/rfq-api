@@ -34,16 +34,16 @@ components:
         id:
           type: string
           format: uuid
-        article:
+        product:
           type: string
           maxLength: 20
           pattern: '(\w+\W*)*'
-          example: Firecrackers aA
+          example: Firecrackers
         quantity:
           type: integer
           format: int32
           minimum: 1
-          maximum: 2000
+          maximum: 1000
           example: 30
         price:
           type: number
@@ -59,7 +59,3 @@ components:
           pattern: "[A-Z]{3}"
           maxLength: 3
           example: ABC
-        lieferant:
-          type: string
-          maxLength: 25
-          pattern: "\\w+"
