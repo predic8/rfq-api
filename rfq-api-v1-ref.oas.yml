@@ -29,6 +29,7 @@ components:
   schemas:
     Quotation:
       type: object
+      additionalProperties: false
       properties:
         id:
           type: string
@@ -37,25 +38,9 @@ components:
           type: string
           maxLength: 20
           pattern: '(\w+\W*)*'
-          example: Firecrackers
         quantity:
           type: integer
           format: int32
           minimum: 1
           maximum: 1000
-          example: 30
-        price:
-          type: number
-          minimum: 0
-          example: 9.98
-        shipment:
-          type: string
-          enum:
-            - FOB
-            - DAT
-        mode:
-          type: string
-          pattern: "[A-Z]{3}"
-          maxLength: 3
-          example: ABC
 
