@@ -14,12 +14,10 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
-      - id: OAS
-        name: Lint OAS
+      - name: Lint OAS
         run: spectral lint rfq-api-v1.oas.yml
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-styleguide.yml -O .spectral.yml
-      - id: Style
-        name: Lint Styleguide
+      - name: Lint Styleguide
         run: spectral lint rfq-api-v1.oas.yml
       - run: npm install --save -D @stoplight/spectral-owasp-ruleset
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-security.yml  --verbose  -O .spectral.yml
