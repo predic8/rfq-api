@@ -9,5 +9,4 @@
 # RFQ API - API Lifecycle Demo
 
 
-
 spectral lint rfq-api-v1.oas.yml
