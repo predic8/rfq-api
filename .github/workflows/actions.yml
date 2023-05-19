@@ -7,7 +7,7 @@ env:
   RULES_VERSION: v6
 
 jobs:
-  OAS-Rules:
+  Checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
