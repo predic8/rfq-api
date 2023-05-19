@@ -8,6 +8,7 @@ env:
 
 jobs:
   Lint-OAS:
+    name: Lint OAS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +17,7 @@ jobs:
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
       - run: spectral lint rfq-api-v1.oas.yml
 
-  Lint OWASP:
+  Lint-OWASP:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
