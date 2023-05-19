@@ -4,7 +4,7 @@ on:
   - pull_request
 
 env:
-  RULES_VERSION: v6
+  RULES_VERSION: v7
 
 jobs:
   Checks:
