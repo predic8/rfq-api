@@ -14,14 +14,19 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
-      - run: spectral lint rfq-api-v1.oas.yml
+      - name: Lint OAS
+        run: spectral lint rfq-api-v1.oas.yml
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-styleguide.yml -O .spectral.yml
-      - run: spectral lint rfq-api-v1.oas.yml
+      - name: Lint Styleguide
+        run: spectral lint rfq-api-v1.oas.yml
       - run: npm install --save -D @stoplight/spectral-owasp-ruleset
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-security.yml  --verbose  -O .spectral.yml
+        name: Lint OWASP
       - run: spectral lint rfq-api-v1.oas.yml
       - uses: actions/setup-go@v4
         with:
           go-version: '^1.20.3'
       - run: go install github.com/tufin/oasdiff@latest
-      - run: oasdiff -fail-on-diff -base rfq-api-v1-ref.oas.yml -revision rfq-api-v1.oas.yml
+      - name: Check version compatibility
+        run: oasdiff -fail-on-diff -base rfq-api-v1-ref.oas.yml -revision rfq-api-v1.oas.yml
+
