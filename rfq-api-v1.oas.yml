@@ -43,3 +43,5 @@ components:
           format: int32
           minimum: 1
           maximum: 1000
+        shipment:
+            type: string
