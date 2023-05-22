@@ -1,10 +1,10 @@
-[![Lint OAS](https://github.com/predic8/rfq-api/actions/workflows/actions.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/actions.yml)
+[![Lint OAS](https://github.com/predic8/rfq-api/actions/workflows/oas.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/oas.yml)
 
-[![Lint OWASP](https://github.com/predic8/rfq-api/actions/workflows/actions.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/actions.yml)
+[![Lint OWASP](https://github.com/predic8/rfq-api/actions/workflows/owasp.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/owasp.yml)
 
-[![Lint Styleguide](https://github.com/predic8/rfq-api/actions/workflows/actions.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/actions.yml)
+[![Lint Styleguide](https://github.com/predic8/rfq-api/actions/workflows/styleguide.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/styleguide.yml)
 
-[![Check Compatibility](https://github.com/predic8/rfq-api/actions/workflows/actions.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/actions.yml)
+[![Check Compatibility](https://github.com/predic8/rfq-api/actions/workflows/compatibility.yml/badge.svg)](https://github.com/predic8/rfq-api/actions/workflows/compatibility.yml)
 
 
 # RFQ API - API Lifecycle Demo
