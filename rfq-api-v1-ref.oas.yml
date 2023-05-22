@@ -30,6 +30,9 @@ components:
     Quotation:
       type: object
       additionalProperties: false
+      required:
+        - id
+        - product
       properties:
         id:
           type: string
