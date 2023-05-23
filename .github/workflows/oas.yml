@@ -8,7 +8,6 @@ env:
 
 jobs:
   Lint-OAS:
-    name: Lint OAS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

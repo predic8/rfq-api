@@ -8,7 +8,6 @@ env:
 
 jobs:
   Lint-Styleguide:
-    name: Lint Styleguide
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
