@@ -6,7 +6,7 @@ info:
     email: bayer@predic8.de
   description: Quotation API for Quotes
 servers:
-  - url: https://api.server.test/v1
+  - url: https://api.predic8.de/rfq/v1
 tags:
   - name: RFQ
 paths:
@@ -33,7 +33,6 @@ components:
       required:
         - id
         - product
-        - shipment
       properties:
         id:
           type: string
@@ -49,3 +48,6 @@ components:
           maximum: 1000
         shipment:
             type: string
+            enum:
+              - FOB
+              - DAT
