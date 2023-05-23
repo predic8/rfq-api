@@ -7,7 +7,7 @@ env:
   RULES_VERSION: v7
 
 jobs:
-  Lint-Styleguide:
+  Styleguide:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
