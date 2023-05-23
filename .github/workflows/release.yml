@@ -5,6 +5,9 @@ on:
     tags:
       - 'v[0-9]+'
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
   Release:
     runs-on: ubuntu-latest
