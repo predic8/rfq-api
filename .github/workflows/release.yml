@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
+      - run: gh auth login --with-token $TRIGGER_GW_TOKEN
       - run: gh workflow run actions.yml -R "predic8/api-lifecycle-gateway"
           
 #  - run: gh release create --generate-notes -t "${{ github.ref_name }}" "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
