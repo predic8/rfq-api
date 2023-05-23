@@ -17,6 +17,4 @@ jobs:
       - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
       - run: |
           export GH_TOKEN=$API_LIFECYCLE_SECRET
-          echo "Sec: $API_LIFECYCLE_SECRET"
-          echo "GHT: $GH_TOKEN"
           gh workflow run actions.yml -R "predic8/api-lifecycle-gateway"
