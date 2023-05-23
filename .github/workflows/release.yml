@@ -1,0 +1,12 @@
+name: Release OpenAPI
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+'
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Release ..."
