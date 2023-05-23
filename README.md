@@ -2,5 +2,4 @@
 
 # RFQ API - API Lifecycle Demo
 
-
 Contains the RFQ API specification and checks for OpenAPI, OWASP, styleguide and version compatibility.
