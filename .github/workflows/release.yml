@@ -14,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
-      - run: |
+      - name: Create Release "${{ github.ref_name }}"
+        run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
+      - name: Trigger API-Gateway Deployment
+        run: |
           export GH_TOKEN=$API_LIFECYCLE_SECRET
           gh workflow run actions.yml -R "predic8/api-lifecycle-gateway"
