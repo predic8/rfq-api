@@ -1,7 +1,7 @@
 openapi: '3.0.2'
 info:
   title: Quotation API
-  version: '1.0.0'
+  version: '1.1.0'
   contact:
     email: bayer@predic8.de
   description: Quotation API for Quotes
@@ -45,4 +45,4 @@ components:
           type: integer
           format: int32
           minimum: 1
-          maximum: 10000
+          maximum: 1000
