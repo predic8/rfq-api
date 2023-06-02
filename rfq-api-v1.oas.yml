@@ -49,3 +49,6 @@ components:
           maximum: 1000
         shipment:
           type: string
+          enum:
+            - FOB
+            - DAT
