@@ -4,7 +4,7 @@ info:
   version: '1.1.0'
   contact:
     email: bayer@predic8.de
-  description: Quotation API for Quotes
+  description: Quotation API 4 Quotes
 servers:
   - url: https://api.predic8.de/rfq/v1
 tags:
