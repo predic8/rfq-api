@@ -1,7 +1,7 @@
 openapi: '3.0.2'
 info:
   title: Quotation API
-  version: '1.0.0'
+  version: '1.1.0'
   contact:
     email: bayer@predic8.de
   description: Quotation API for Quotes
@@ -33,6 +33,7 @@ components:
       required:
         - id
         - product
+        - shipment
       properties:
         id:
           type: string
@@ -48,3 +49,6 @@ components:
           maximum: 1000
         shipment:
           type: string
+          enum:
+            - FOB
+            - DAT
