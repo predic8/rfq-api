@@ -33,7 +33,6 @@ components:
       required:
         - id
         - product
-        - shipment
       properties:
         id:
           type: string
@@ -49,3 +48,6 @@ components:
           maximum: 1000
         shipment:
           type: string
+          enum:
+            - DAT
+            - FOB
