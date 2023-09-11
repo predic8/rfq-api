@@ -21,6 +21,8 @@ paths:
       responses:
         '200':
           description: OK
+        '201':
+          description: OK
 
 components:
   schemas:
@@ -35,10 +37,10 @@ components:
           maxLength: 20
           pattern: '(\w+\W*)*'
         quantity:
-          type: integer
-          format: int32
+          type: number
+          # format: int32
           minimum: 0
-          maximum: 1000
+          maximum: 500
         price:
           type: number
           minimum: 0
