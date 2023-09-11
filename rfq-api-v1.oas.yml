@@ -11,7 +11,7 @@ servers:
 paths:
   /rfqs:
     post:
-      operationid: requestQuote
+      operationId: requestQuote
       requestBody:
         content:
           application/json:
