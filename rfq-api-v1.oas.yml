@@ -30,7 +30,6 @@ components:
         id:
           type: string
           format: uuid
-          maxLength: 10
         product:
           type: string
           maxLength: 20
