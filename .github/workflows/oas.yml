@@ -1,0 +1,17 @@
+name: Lint OAS
+
+on:
+  - pull_request
+
+env:
+  RULES_VERSION: v8
+
+jobs:
+  OAS:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install -g @stoplight/spectral-cli
+      - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
+      - run: spectral lint rfq-api-v1.oas.yml

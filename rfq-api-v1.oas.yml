@@ -1,12 +1,12 @@
 openapi: '3.0.2'
 info:
   title: Quotation API
-  version: '1.0'
+  version: '1.0.0'
   contact:
     email: bayer@predic8.de
   description: The API for Quotations
 servers:
-  - url: https://api.server.test/v1
+  - url: https://api.predic8.de/logistics
 
 paths:
   /rfqs:
@@ -42,12 +42,3 @@ components:
         price:
           type: number
           minimum: 0
-        shipment:
-          type: string
-          enum:
-            - FOB
-            - DAT
-        mode:
-          type: string
-          pattern: "[A-Z]{3}"
-          maxLength: 3
