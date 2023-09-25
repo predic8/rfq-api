@@ -7,6 +7,7 @@ on:
 
 env:
   GH_TOKEN: ${{ github.token }}
+  API_LIFECYCLE_SECRET: ${{ secrets.ApiLifecycleTrigger }}
 
 jobs:
   Release:
@@ -14,3 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api-v1.oas.yml#OpenAPI"
+      - run: |
+          export GH_TOKEN=$API_LIFECYCLE_SECRET
+          gh workflow run actions.yml -R "predic8/api-lifecycle-gateway"
