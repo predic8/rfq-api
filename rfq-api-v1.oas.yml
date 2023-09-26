@@ -26,8 +26,6 @@ components:
   schemas:
     Quotation:
       type: object
-      required:
-        - shipment
       properties:
         id:
           type: string
@@ -46,3 +44,6 @@ components:
           minimum: 0
         shipment:
           type: string
+          enum:
+            - FOB
+            - CIF
