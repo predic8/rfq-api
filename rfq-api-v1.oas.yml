@@ -42,8 +42,3 @@ components:
         price:
           type: number
           minimum: 0
-        shipment:
-          type: string
-          enum:
-            - FOB
-            - DAT
