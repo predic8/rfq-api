@@ -26,6 +26,9 @@ components:
   schemas:
     Quotation:
       type: object
+      required:
+        - id
+        - shipment
       properties:
         id:
           type: string
@@ -42,3 +45,5 @@ components:
         price:
           type: number
           minimum: 0
+        shipment:
+          type: string
