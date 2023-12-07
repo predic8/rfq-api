@@ -49,3 +49,5 @@ components:
             - CIF
         test:
           type: boolean
+        test2:
+          type: boolean
