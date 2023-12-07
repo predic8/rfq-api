@@ -47,3 +47,5 @@ components:
           enum:
             - DOB
             - CIF
+        test:
+          type: boolean
