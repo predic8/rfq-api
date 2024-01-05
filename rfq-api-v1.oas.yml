@@ -49,3 +49,5 @@ components:
             - CIF
         test1:
           type: boolean
+      required:
+        - test1
