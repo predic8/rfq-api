@@ -1,7 +1,7 @@
 openapi: '3.0.2'
 info:
   title: Quotation API
-  version: '1.2.3'
+  version: '1.2.4'
   contact:
     email: bayer@predic8.de
   description: The API for Quotation
@@ -47,7 +47,5 @@ components:
           enum:
             - DOB
             - CIF
-        test:
-          type: boolean
         test1:
           type: boolean
