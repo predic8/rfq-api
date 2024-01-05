@@ -53,3 +53,5 @@ components:
           type: boolean
         test3: 
           type: boolean
+        test4:
+          type: boolean
