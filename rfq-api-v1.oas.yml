@@ -49,3 +49,4 @@ components:
             - CIF
         test1:
           type: boolean
+      additionalProperties: false
