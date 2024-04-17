@@ -26,6 +26,8 @@ components:
   schemas:
     Quotation:
       type: object
+      required:
+        - price
       properties:
         id:
           type: string
