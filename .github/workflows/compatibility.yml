@@ -7,8 +7,8 @@ jobs:
   Compatibility:
     runs-on: ubuntu-latest
     steps:
-      - name: OpenAPI Diff
-        uses: oasdiff/oasdiff-action/breaking@main
+      - uses: actions/checkout@v3
+      - uses: oasdiff/oasdiff-action/breaking@main
         with:
           base: https://github.com/predic8/rfq-api/releases/download/v1.0.0/rfq-api-v1.oas.yml
-          revision: rfq-api-v1.oas.yml
+          revision: /rfq-api-v1.oas.yml
