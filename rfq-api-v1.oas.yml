@@ -48,4 +48,4 @@ components:
             - DOB
             - CIF
         express:
-          type: char
+          type: string
