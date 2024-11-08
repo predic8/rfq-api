@@ -1,6 +1,6 @@
 openapi: '3.0.2'
 info:
-  title: Quotation API
+  title: Quotation API +
   version: '1.2.0'
   contact:
     email: bayer@predic8.de
