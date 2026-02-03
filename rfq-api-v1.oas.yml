@@ -4,7 +4,7 @@ info:
   version: '1.2.0'
   contact:
     email: bayer@predic8.de
-  description: The API for Quotation
+  description: The API for Quotations
 servers:
   - url: https://api.predic8.de/logistics
 
