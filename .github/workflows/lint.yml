@@ -21,3 +21,7 @@ jobs:
           print_logs: true
           show_rules: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - if: steps.vacuum.outcome == 'failure'
+        run: |
+          echo "Vacuum found errors"
+          exit 1
