@@ -10,7 +10,7 @@
 #   OAS:
 #     runs-on: ubuntu-latest
 #     steps:
-#       - uses: actions/checkout@v4
+#       - uses: actions/checkout@v5
 #       - uses: actions/setup-node@v3
 #       - run: npm install -g @stoplight/spectral-cli
 #       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
