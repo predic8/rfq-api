@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: pb33f/vacuum-action@v2
+        id: vacuum
         with:
           openapi_path: rfq-v1.oas.yaml
           ruleset: rulesets/oas.yaml
