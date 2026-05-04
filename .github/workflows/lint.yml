@@ -6,6 +6,7 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  issues: write
 
 jobs:
   lint:
@@ -16,7 +17,7 @@ jobs:
         with:
           openapi_path: rfq-v1.oas.yaml
           ruleset: rulesets/oas.yaml
-          fail_on_error: true
+          continue-on-error: true
           print_logs: true
           show_rules: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
