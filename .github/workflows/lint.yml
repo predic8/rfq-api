@@ -21,6 +21,11 @@ jobs:
           print_logs: true
           show_rules: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Debug status
+        run: |
+          echo "outcome: ${{ steps.vacuum.outcome }}"
+          echo "conclusion: ${{ steps.vacuum.conclusion }}"
+          echo "Vacuum: ${{ steps.vacuum }}"
       - if: steps.vacuum.conclusion == 'failure'
         run: |
           echo "Vacuum found errors: $(date)"
