@@ -23,5 +23,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - if: steps.vacuum.outcome == 'failure'
         run: |
-          echo "Vacuum found errors"
+          echo "Vacuum found errors: $(date)"
           exit 1
