@@ -18,4 +18,5 @@ jobs:
           ruleset: rulesets/oas.yaml
           fail_on_error: true
           print_logs: true
+          show_rules: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
