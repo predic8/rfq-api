@@ -17,7 +17,7 @@ jobs:
         with:
           openapi_path: rfq-v1.oas.yaml
           ruleset: rulesets/oas.yaml
-          continue-on-error: true
+          fail_on_error: false
           print_logs: true
           show_rules: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
