@@ -1,0 +1,9 @@
+extends:
+  - recommended
+
+rules:
+  oas3-api-servers: false
+  operation-operationId: warn
+
+  oas3-operation-security-defined: error
+  oas3-schema: error
