@@ -1,7 +1,7 @@
-extends:
-  - recommended
+extends: [[vacuum:oas, recommended]]
 
 rules:
+  info-description: false
   oas3-api-servers: false
   operation-operationId: warn
 
