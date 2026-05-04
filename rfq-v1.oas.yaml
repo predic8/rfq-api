@@ -13,6 +13,8 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+                - product
               properties:
                 id:
                   type: string
@@ -20,6 +22,8 @@ paths:
                   type: number
                 shipment:
                   type: string
+                product:
+                  type: char
 
       responses:
         '200':
