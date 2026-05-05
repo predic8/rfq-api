@@ -4,7 +4,7 @@ on:
   - pull_request
 
 env:
-  RULES_VERSION: v15
+  RULES_VERSION: v16
 
 jobs:
   OWASP:
