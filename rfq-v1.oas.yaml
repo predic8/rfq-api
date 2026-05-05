@@ -13,6 +13,8 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+                - product
               properties:
                 id:
                   type: string
@@ -22,6 +24,8 @@ paths:
                 shipment:
                   type: string
                   maxLength: 10
+                product:
+                  type: char
       responses:
         '200':
           description: OK
