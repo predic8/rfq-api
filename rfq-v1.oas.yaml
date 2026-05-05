@@ -16,10 +16,12 @@ paths:
               properties:
                 id:
                   type: string
+                  format: uuid
                 price:
                   type: number
                 shipment:
                   type: string
+                  maxLength: 10
       responses:
         '200':
           description: OK
