@@ -24,7 +24,7 @@ paths:
                   maxLength: 10
                 product:
                   type: string
-                  maxLength: 10
+                  maxLength: 20
       responses:
         '200':
           description: OK
