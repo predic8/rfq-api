@@ -14,4 +14,4 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-oas.yml -O .spectral.yml
-      - run: spectral lint rfq-v1.oas.yml
+      - run: spectral lint rfq-v1.oas.yaml

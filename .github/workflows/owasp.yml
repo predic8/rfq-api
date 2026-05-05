@@ -15,4 +15,4 @@ jobs:
       - run: npm install -g @stoplight/spectral-cli
       - run: npm install --save -D @stoplight/spectral-owasp-ruleset
       - run: wget https://raw.githubusercontent.com/predic8/openapi-rules/$RULES_VERSION/spectral-security.yml -O .spectral.yml
-      - run: spectral lint rfq-v1.oas.yml
+      - run: spectral lint rfq-v1.oas.yaml
